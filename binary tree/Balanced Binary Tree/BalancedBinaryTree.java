@@ -13,6 +13,6 @@ public class Solution {
         if (left == -1 || right == -1 || Math.abs(left-right) > 1) {
             return -1;
         }
-        return Math.max(left, right) + 1;
+        return Math.max(left, right) + 1;  //Get the max height of the subtrees
     }
 }
