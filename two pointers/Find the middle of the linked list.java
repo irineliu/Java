@@ -11,7 +11,8 @@ public class Solution {
         
         ListNode slow=head;
         ListNode fast=head.next;
-        while(fast!=null&&fast.next!=null){
+        while(fast!=null&&fast.next!=null){ //condition in while is the success condition you want to loop to reach
+                                            //fast.next==null is for when the length of the linked list is even
             slow=slow.next;
             fast=fast.next.next;
         }
